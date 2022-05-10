@@ -1,9 +1,0 @@
-tạo file mới để commit
-đã sửa file để git reset 
-day
-la
-noi dung
-moi
-nhe
-haha
-đã sửa file để git reset 
