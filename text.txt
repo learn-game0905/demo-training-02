@@ -1,0 +1,2 @@
+tạo file mới để commit
+đã sửa file để git reset 
