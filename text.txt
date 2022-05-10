@@ -6,3 +6,4 @@ noi dung
 moi
 nhe
 haha
+đã sửa file để git reset 
