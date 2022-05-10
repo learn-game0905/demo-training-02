@@ -11,14 +11,31 @@ public class hello : MonoBehaviour
 
         Debug.Log(message);
 
+        int num;
+        num = 100;
+        num = 200;
+        int i, j = 10, k = 100;
+        int a = 0,
+            b = 10,
+            c = 100;
+        int e = 100;
+
+        int h = e;
+        h = 10 + 10;
+        float rate = 10.2f;
+        decimal amount = 100.50M;
+        char code = 'C';
+        bool isValid = true;
+        string name = "Steve";
+
         MyClass newClass = new MyClass();
-        Debug.Log(newClass.MyMethod("mes1" , "mes 2"));
+        Debug.Log(newClass.MyMethod("mes1", "mes 2"));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
 
