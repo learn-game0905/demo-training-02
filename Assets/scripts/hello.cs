@@ -22,6 +22,8 @@ public class hello : MonoBehaviour
 
         int h = e;
         h = 10 + 10;
+        var chuoi = "khai bao dong";
+        var m = 999;
         float rate = 10.2f;
         decimal amount = 100.50M;
         char code = 'C';
