@@ -1,1 +1,3 @@
 mới tạo file
+sử dụng file này để sửa
+git revert
