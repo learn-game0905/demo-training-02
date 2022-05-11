@@ -128,9 +128,55 @@ public class hello : MonoBehaviour
         string ch = "S";
         string word = "String";
         string text = "This is a string.";
-        string str1 = "Hello"; // uses string keyword
+        // string str1 = "Hello"; // uses string keyword
+        //
+        // String str2 = "Hello"; // uses System.String class
+        
+        char[] chars = {'H','e','l','l','o'};
+
+        string str1 = new string(chars);  
+        String str2 = new String(chars); 
+
+        foreach (char ccc in str1)
+        {
+            Console.WriteLine(ccc);
+        }
+        
+        string text1 = "This is a \"string\" in C#.";
+        string str = "xyzdef\\rabc";
+        string path = "\\\\mypc\\ shared\\project";
+        
+        string str3 = @"xyzdef\rabc";
+        string path2 = @"\\mypc\shared\project";
+        string email2 = @"test@test.com";
+        
+        string str111 = "this is a \n" + 
+                      "multi line \n" + 
+                      "string";
+		
+        // Verbatim string
+        string str222 = @"this is a 
+        multi line 
+        string";
+        
+        string text2 = "This is a \"string\" in C#."; // valid
+        // string text3 = @"This is a "string." in C#."; // error
+        // string text4 = @"This is a \"string\" in C#."; // error
+        string text5 = @"This is a ""string"" in C#."; // valid
+        
+        string name123 = "Mr." + "James " + "Bond" + ", Code: 007";
  
-        String str2 = "Hello"; // uses System.String class
+        string firstName1111 = "James";
+        string lastName1111 = "Bond";
+        string code123 = "007";
+ 
+        string agent = "Mr." + firstName1111 + " " + lastName1111 + ", Code: " + code;
+        
+        string firstName = "James";
+        string lastName = "Bond";
+        string code431 = "007";
+ 
+        string fullName = $"Mr. {firstName} {lastName}, Code: {code}";
         
         MyClass newClass = new MyClass();
         Debug.Log(newClass.MyMethod("mes1", "mes 2"));
