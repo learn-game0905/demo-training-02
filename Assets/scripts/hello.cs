@@ -30,6 +30,72 @@ public class hello : MonoBehaviour
         bool isValid = true;
         string name = "Steve";
 
+        uint ui = 100u;
+        float fl = 10.2f;
+        long l = 45755452222222l;
+        ulong ul = 45755452222222ul;
+        double d = 11452222.555d;
+        decimal mon = 1000.15m;
+
+        int q = default(int); // 0
+        float f = default(float);// 0
+        decimal w = default(decimal);// 0
+        bool t = default(bool);// false
+        char y = default(char);// '\0'
+
+        // C# 7.1 onwards
+        int p = default; // 0
+        float n = default;// 0
+        decimal o = default;// 0
+        bool x = default;// false
+        char z = default;// '\0'
+
+        // data type byte
+        byte b1 = 255;
+        byte b2 = -128;// compile-time error: Constant value '-128' cannot be converted to a 'byte'
+        sbyte sb1 = -128; 
+        sbyte sb2 = 127; 
+        // short
+        short s1 = -32768;
+        short s2 = 32767;
+        short s3 = 35000;//Compile-time error: Constant value '35000' cannot be converted to a 'short'
+
+        ushort us1 = 65535;
+        ushort us2 = -32000; //Compile-time error: Constant value '-32000' cannot be converted to a 'ushort'
+
+        Console.WriteLine(Int16.MaxValue);//32767
+        Console.WriteLine(Int16.MinValue);//-32768
+        Console.WriteLine(UInt16.MaxValue);//65535
+        Console.WriteLine(UInt16.MinValue);//0
+        // int
+        int i11 = -2147483648;
+        int j22 = 2147483647;
+        int k33 = 4294967295; //Compile-time error: Cannot implicitly convert type 'uint' to 'int'.
+
+        uint ui1 = 4294967295;
+        uint ui2 =-1; //Compile-time error: Constant value '-1' cannot be converted to a 'uint'
+
+        Console.WriteLine(Int32.MaxValue);//2147483647
+        Console.WriteLine(Int32.MinValue);//-2147483648
+        Console.WriteLine(UInt32.MaxValue);//4294967295
+        Console.WriteLine(UInt32.MinValue);//0
+
+        Console.WriteLine(Byte.MaxValue);//255
+        Console.WriteLine(Byte.MinValue);//0
+        Console.WriteLine(SByte.MaxValue);//127
+        Console.WriteLine(SByte.MinValue);//-128
+        // Long
+        long l1 = -9223372036854775808;
+        long l2 = 9223372036854775807;
+
+        ulong ul1 = 18223372036854775808ul;
+        ulong ul2 = 18223372036854775808UL;
+
+        Console.WriteLine(Int64.MaxValue);//9223372036854775807
+        Console.WriteLine(Int64.MinValue);//-9223372036854775808
+        Console.WriteLine(UInt64.MaxValue);//18446744073709551615
+        Console.WriteLine(UInt64.MinValue);//0
+
         MyClass newClass = new MyClass();
         Debug.Log(newClass.MyMethod("mes1", "mes 2"));
     }
