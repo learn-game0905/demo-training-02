@@ -8,7 +8,7 @@ public class hello : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string message = "Hello World!!";
+        /*string message = "Hello World!!";
 
         Debug.Log(message);
 
@@ -79,12 +79,12 @@ public class hello : MonoBehaviour
         /*Console.WriteLine(Int32.MaxValue);//2147483647
         Console.WriteLine(Int32.MinValue);//-2147483648
         Console.WriteLine(UInt32.MaxValue);//4294967295
-        Console.WriteLine(UInt32.MinValue);//0*/
+        Console.WriteLine(UInt32.MinValue);//0#1#
 
         /*Console.WriteLine(Byte.MaxValue);//255
         Console.WriteLine(Byte.MinValue);//0
         Console.WriteLine(SByte.MaxValue);//127
-        Console.WriteLine(SByte.MinValue);//-128*/
+        Console.WriteLine(SByte.MinValue);//-128#1#
         // Long
         long l1 = -9223372036854775808;
         long l2 = 9223372036854775807;
@@ -95,7 +95,7 @@ public class hello : MonoBehaviour
         /*Console.WriteLine(Int64.MaxValue);//9223372036854775807
         Console.WriteLine(Int64.MinValue);//-9223372036854775808
         Console.WriteLine(UInt64.MaxValue);//18446744073709551615
-        Console.WriteLine(UInt64.MinValue);//0*/
+        Console.WriteLine(UInt64.MinValue);//0#1#
 
         // data float
         float f1 = 123456.5F;
@@ -179,7 +179,7 @@ public class hello : MonoBehaviour
         string fullName = $"Mr. {firstName} {lastName}, Code: {code}";
         
         MyClass newClass = new MyClass();
-        Debug.Log(newClass.MyMethod("mes1", "mes 2"));
+        Debug.Log(newClass.MyMethod("mes1", "mes 2"));*/
     }
 
     // Update is called once per frame

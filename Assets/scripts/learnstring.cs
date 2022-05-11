@@ -83,8 +83,8 @@ public class learnstring : MonoBehaviour
         d1 = "Hello";
         // string greet = d1;
 		
-        d1 = DateTime.Now;
-        DateTime dt = d1;
+        // d1 = DateTime.Now;
+        // DateTime dt = d1;
         
         // Nullable Types
         // Nullable<int> i2 = null;
