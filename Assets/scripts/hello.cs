@@ -53,8 +53,8 @@ public class hello : MonoBehaviour
         // data type byte
         byte b1 = 255;
         byte b2 = -128;// compile-time error: Constant value '-128' cannot be converted to a 'byte'
-        sbyte sb1 = -128; 
-        sbyte sb2 = 127; 
+        sbyte sb1 = -128;
+        sbyte sb2 = 127;
         // short
         short s1 = -32768;
         short s2 = 32767;
@@ -73,7 +73,7 @@ public class hello : MonoBehaviour
         int k33 = 4294967295; //Compile-time error: Cannot implicitly convert type 'uint' to 'int'.
 
         uint ui1 = 4294967295;
-        uint ui2 =-1; //Compile-time error: Constant value '-1' cannot be converted to a 'uint'
+        uint ui2 = -1; //Compile-time error: Constant value '-1' cannot be converted to a 'uint'
 
         Console.WriteLine(Int32.MaxValue);//2147483647
         Console.WriteLine(Int32.MinValue);//-2147483648
@@ -95,6 +95,34 @@ public class hello : MonoBehaviour
         Console.WriteLine(Int64.MinValue);//-9223372036854775808
         Console.WriteLine(UInt64.MaxValue);//18446744073709551615
         Console.WriteLine(UInt64.MinValue);//0
+
+        // data float
+        float f1 = 123456.5F;
+        float f2 = 1.123456f;
+
+        Console.WriteLine(f1);//123456.5
+        Console.WriteLine(f2);//1.123456
+        // double
+        double d1 = 12345678912345.5d;
+        double d2 = 1.123456789123456d;
+
+        Console.WriteLine(d1);//12345678912345.5
+        Console.WriteLine(d2);//1.123456789123456
+        // decimal
+        decimal d1 = 123456789123456789123456789.5m;
+        decimal d2 = 1.1234567891345679123456789123m;
+
+        Console.WriteLine(d1);
+        Console.WriteLine(d2);
+        //Scientific Notation
+        double d = 0.12e2;
+        Console.WriteLine(d);  // 12;
+
+        float f = 123.45e-2f;
+        Console.WriteLine(f);  // 1.2345
+
+        decimal m = 1.2e6m;
+        Console.WriteLine(m);// 1200000
 
         MyClass newClass = new MyClass();
         Debug.Log(newClass.MyMethod("mes1", "mes 2"));
