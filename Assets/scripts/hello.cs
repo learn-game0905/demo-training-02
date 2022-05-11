@@ -124,6 +124,13 @@ public class hello : MonoBehaviour
         decimal m = 1.2e6m;
         // Console.WriteLine(m);// 1200000
 
+        string ch = "S";
+        string word = "String";
+        string text = "This is a string.";
+        string str1 = "Hello"; // uses string keyword
+ 
+        String str2 = "Hello"; // uses System.String class
+        
         MyClass newClass = new MyClass();
         Debug.Log(newClass.MyMethod("mes1", "mes 2"));
     }
