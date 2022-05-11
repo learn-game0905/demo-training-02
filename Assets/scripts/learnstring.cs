@@ -11,10 +11,11 @@ public class learnstring : MonoBehaviour
     {
         StringBuilder sb = new StringBuilder("Hello World!", 50);
 
-        for (int i = 0; i < sb.Length; i++)
-        {
-            Debug.Log(sb[i]);
-        }
+        // int? i;
+        // for (i = 0; i < sb.Length; i++)
+        // {
+        //     Debug.Log(sb[i]);
+        // }
         
         var greet = sb.ToString();
         sb.Append("Hello ");
@@ -86,13 +87,90 @@ public class learnstring : MonoBehaviour
         DateTime dt = d1;
         
         // Nullable Types
-        Nullable<int> i2 = null;
+        // Nullable<int> i2 = null;
+        
+        // Nullable<int> i = null;
+
+        // Debug.Log(i.GetValueOrDefault());
+        /*if (i.HasValue)
+            Console.WriteLine(i.Value); // or Console.WriteLine(i)
+        else
+            Console.WriteLine("Null");*/
+        
+        // int? j = null;
+        // double? D = null;
+        
+        // int? i3 = null;
+            
+        // int j2 = i ?? 0;
+
+        // Debug.Log(j);
+        
+        /*MyClass mycls = new MyClass();
+
+        if(mycls.i == null)
+            Debug.Log("Null");
+        
+        i = null;
+        int j = 10;
+
+        if (Nullable.Compare<int>(i, j) < 0)
+            Console.WriteLine("i < j");
+        else if (Nullable.Compare<int>(i, j) > 0)
+            Console.WriteLine("i > j");
+        else
+            Console.WriteLine("i = j");
+        
+        i = 100;*/
+        
+        // Value Type and Reference Type
+
+        int i = 100;
+
+        Console.WriteLine(i);
+    
+        ChangeValue(i);
+    
+        Console.WriteLine(i);
+        
+        Student std1 = new Student();
+        std1.StudentName = "Bill";
+    
+        ChangeReferenceType(std1);
+        Debug.Log(std1.StudentName);
+        
+        string name = "Bill";
+    
+        ChangeReferenceType(name);
+        Debug.Log(name);
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    
+    static void ChangeReferenceType(string name)
+    {
+        name = "Steve";
+    }
+    
+    static void ChangeReferenceType(Student std2)
+    {
+        std2.StudentName = "Steve";
+    }
+    
+    static void ChangeValue(int x)
+    {
+        x =  200;
+
+        Console.WriteLine(x);
+    }
+    
+    class MyClass
+    {
+        public Nullable<int> i;
     }
     
     public class Student
