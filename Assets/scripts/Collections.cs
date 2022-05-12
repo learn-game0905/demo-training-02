@@ -1,5 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+
+
 using UnityEngine;
 
 public class Collections : MonoBehaviour
@@ -339,6 +339,84 @@ public class Collections : MonoBehaviour
         Debug.Log(arList.Contains("Bill"));
         Debug.Log(arList.Contains(10));
         Debug.Log(arList.Contains("Steve"));*/
+        
+        // C# - List<T>
+        
+        /*List<int> primeNumbers = new List<int>();
+        primeNumbers.Add(1); 
+        primeNumbers.Add(5);
+        primeNumbers.Add(7);
+
+        var cities = new List<string>();
+        cities.Add("New York");
+        cities.Add("London");
+        cities.Add("Mumbai");
+        cities.Add("Chicago");
+        cities.Add(null);
+        
+        var bigCities = new List<string>()
+        {
+            "New York",
+            "London",
+            "Mumbai",
+            "Chicago"                    
+        };*/
+        
+        /*string[] cities = new string[3]{ "Mumbai", "London", "New York" };
+
+        var popularCities = new List<string>();
+        
+        popularCities.AddRange(cities);
+
+        var favouriteCities = new List<string>();
+        
+        favouriteCities.AddRange(popularCities);*/
+        
+        /*List<int> numbers = new List<int>() { 1, 2, 5, 7, 8, 10 };
+        Debug.Log(numbers[0]); 
+        Debug.Log(numbers[1]); 
+        Debug.Log(numbers[2]); 
+        Debug.Log(numbers[3]);
+
+        numbers.ForEach(num => Debug.Log(num + ", "));
+
+        for(int i = 0; i < numbers.Count; i++)
+            Debug.Log(numbers[i]);*/
+        
+        /*var students = new List<Student>() { 
+            new Student(){ Id = 1, Name="Bill"},
+            new Student(){ Id = 2, Name="Steve"},
+            new Student(){ Id = 3, Name="Ram"},
+            new Student(){ Id = 4, Name="Abdul"}
+        };
+        
+        var result = from s in students
+            where s.Name == "Bill"
+            select s;
+		
+        foreach(var student in result)
+            Console.WriteLine(student.Id + ", " + student.Name);*/
+        
+        /*var numbers = new List<int>(){ 10, 20, 30, 40 };
+
+        numbers.Insert(1, 11);
+
+        foreach (var num in numbers)
+            Console.Write(num);*/
+        
+        /*var numbers = new List<int>(){ 10, 20, 30, 40, 10 };
+
+        numbers.Remove(10); 
+
+        numbers.RemoveAt(2);
+
+        foreach (var el in intList)
+            Debug.Log(el); */
+        
+        /*var numbers = new List<int>(){ 10, 20, 30, 40 };
+        numbers.Contains(10);
+        numbers.Contains(11);
+        numbers.Contains(20);*/
 
     }
 
