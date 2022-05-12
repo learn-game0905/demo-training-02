@@ -26,7 +26,7 @@ public class ConditionsLoops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        int i = 10, j = 20;
+        // int i = 10, j = 20;
 
         /*if (i < j)
         {
@@ -202,6 +202,71 @@ public class ConditionsLoops : MonoBehaviour
             default:
                 Debug.Log(100);
                 break;
+        }*/
+        
+        // C# for Loop
+        /*for(int i = 0; i < 10; i++)
+        {
+            Debug.Log("Value of i: {0}", i);
+        }*/
+        
+        /*for(int i = 0; i < 10; i++)
+            Debug.Log("Value of i: {0}", i);*/
+        
+        
+        /*int i = 0;
+
+        for(;;)
+        {
+            if (i < 10)
+            {
+                Debug.Log("Value of i: {0}", i);
+                i++;
+            }
+            else
+                break;
+        }*/
+        
+        /*for ( ; ; )
+        {
+            Debug.Log(1);
+        }*/
+        
+        /*for (double d = 1.01D; d < 1.10; d+= 0.01D)
+        {
+            Debug.Log("Value of i: {0}", d);
+        }*/
+        
+        /*for(int i = 10; i > 0; i--)
+        {
+            Debug.Log("Value of i: {0}", i);
+        }*/
+        
+        
+        /*for (int i = 0; i < 10; i++)
+        {
+            if( i == 5 )
+                break;
+
+            Debug.Log("Value of i: {0}", i);
+        }*/
+        
+        /*for (int i = 0, j = 0; i+j < 5; i++, j++)
+        {
+            Debug.Log("Value of i: {0}, J: {1} ", i,j);
+        }*/
+        
+        /*int i = 0, j = 5;
+        for (Debug.Log($"Initializer: i={i}, j={j}"); 
+             i++ < j--; 
+             Debug.Log($"Iterator: i={i}, j={j}"))
+        {
+        }*/
+        
+        /*for (int i = 0; i < 2; i++)
+        {
+            for(int j =i; j < 4; j++)
+                Debug.Log("Value of i: {0}, J: {1} ", i,j);
         }*/
     }
 
