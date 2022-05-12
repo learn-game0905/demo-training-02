@@ -152,6 +152,72 @@ public class Collections : MonoBehaviour
         arr4d2[0, 1, 0, 1]; // returns 6
         arr4d2[0, 1, 1, 0]; // returns 7
         arr4d2[0, 1, 1, 1]; // returns 8*/
+        
+        // C# Jagged Arrays: An Array of Array
+        // int[][] jArray1 = new int[2][];  
+        // int[][,] jArray2 = new int[3][,];
+        
+        /*int[][] jArray = new int[2][]; 
+
+        jArray[0] = new int[3]{1, 2, 3};
+
+        jArray[1] = new int[4]{4, 5, 6, 7 };*/
+        
+        /*int[][] jArray = new int[2][]{
+            new int[3]{1, 2, 3},
+
+            new int[4]{4, 5, 6, 7}
+        };
+
+        jArray[0][0]; //returns 1
+        jArray[0][1]; //returns 2
+        jArray[0][2]; //returns 3
+        jArray[1][0]; //returns 4
+        jArray[1][1]; //returns 5
+        jArray[1][2]; //returns 6
+        jArray[1][3]; //returns 7*/
+        
+        /*int[][] jArray = new int[2][]{
+            new int[3]{1, 2, 3},
+
+            new int[4]{4, 5, 6, 7}
+        };
+
+        for(int i=0; i<jArray.Length; i++)
+        {
+            for(int j=0; j < (jArray[i]).Length; j++)
+                Debug.Log(jArray[i][j]);
+        }*/
+        
+        /*int[][,] jArray = new int[2][,];
+
+        jArray[0] = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
+        jArray[1] = new int[2, 2] { { 7, 8 }, { 9, 10 } }; 
+
+        jArray[0][1, 1]; //returns 4
+                                             
+        jArray[1][1, 0]; //returns 9
+                                             
+        jArray[1][1, 1]; //returns 10*/
+        
+        /*int[][][] intJaggedArray = new int[2][][] 
+        {
+            new int[2][]  
+            { 
+                new int[3] { 1, 2, 3},
+                new int[2] { 4, 5} 
+            },
+            new int[1][]
+            { 
+                new int[3] { 7, 8, 9}
+            }
+        };
+
+        Debug.Log(intJaggedArray[0][0][0]); // 1
+
+        Debug.Log(intJaggedArray[0][1][1]); // 5
+    
+        Debug.Log(intJaggedArray[1][0][2]); // 9*/
     }
 
     // Update is called once per frame
