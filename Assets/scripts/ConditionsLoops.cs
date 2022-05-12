@@ -49,7 +49,7 @@ public class ConditionsLoops : MonoBehaviour
             Debug.Log("i is equal to j");
         }*/
         
-        if (i != j)
+        /*if (i != j)
         {
             if (i < j)
             {
@@ -61,7 +61,34 @@ public class ConditionsLoops : MonoBehaviour
             }
         }
         else
-            Debug.Log("i is equal to j");
+            Debug.Log("i is equal to j");*/
+        
+        // C# - Ternary Operator ?:
+        /*int x = 20, y = 10;
+
+        var result = x > y ? "x is greater than y" : "x is less than y";
+
+        Debug.Log(result);
+        
+        int x = 10, y = 100;
+
+        if (x > y)
+            Debug.Log("x is greater than y");
+        else
+            Debug.Log("x is less than y");*/
+        
+        /*int x = 10, y = 100;
+
+        string result = x > y ? "x is greater than y" : 
+            x < y ? "x is less than y" : 
+            x == y ? "x is equal to y" : "No result";
+
+        Debug.Log(result);*/
+        
+        var x = 2, y = 10;
+
+        var result = x * 3 > y ? x : y > z? y : z;
+        Debug.Log(result);
     }
 
     // Update is called once per frame
