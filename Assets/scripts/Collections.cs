@@ -52,10 +52,10 @@ public class Collections : MonoBehaviour
         
         /*int[] nums = new int[5]{ 10, 15, 16, 8, 6 };
 
-        nums.Max(); // returns 16
-        nums.Min(); // returns 6
-        nums.Sum(); // returns 55
-        nums.Average(); // returns 55*/
+        nums.Max(); 
+        nums.Min(); 
+        nums.Sum(); 
+        nums.Average(); 
         
         /*int[] nums = new int[5]{ 10, 15, 16, 8, 6 };
 
@@ -95,12 +95,12 @@ public class Collections : MonoBehaviour
             {5, 6} 
         };*/
 
-        /*arr2d[0, 0]; //returns 1
-        arr2d[0, 1]; //returns 2
-        arr2d[1, 0]; //returns 3
-        arr2d[1, 1]; //returns 4
-        arr2d[2, 0]; //returns 5
-        arr2d[2, 1]; //returns 6*/
+        /*arr2d[0, 0];
+        arr2d[0, 1];
+        arr2d[1, 0];
+        arr2d[1, 1];
+        arr2d[2, 0];
+        arr2d[2, 1];
         
         
         /*int[, ,] arr3d1 = new int[1, 2, 2]{
@@ -117,14 +117,14 @@ public class Collections : MonoBehaviour
             { { 7, 8, 9}, {10, 11, 12} }
         };
 
-        arr3d2[0, 0, 0]; // returns 1 
-        arr3d2[0, 0, 1]; // returns 2 
-        arr3d2[0, 1, 0]; // returns 3 
-        arr3d2[0, 1, 1]; // returns 4 
-        arr3d2[1, 0, 0]; // returns 5 
-        arr3d2[1, 0, 1]; // returns 6 
-        arr3d2[1, 1, 0]; // returns 7 
-        arr3d2[1, 1, 1]; // returns 8*/
+        arr3d2[0, 0, 0];  
+        arr3d2[0, 0, 1];  
+        arr3d2[0, 1, 0];  
+        arr3d2[0, 1, 1];  
+        arr3d2[1, 0, 0];  
+        arr3d2[1, 0, 1];  
+        arr3d2[1, 1, 0];  
+        arr3d2[1, 1, 1]; 
         
         /*int[,,,] arr4d1 = new int[1, 1, 2, 2]{
             { 
@@ -132,10 +132,10 @@ public class Collections : MonoBehaviour
             }
         };
 
-        arr4d1[0, 0, 0, 0]; // returns 1
-        arr4d1[0, 0, 0, 1]; // returns 2
-        arr4d1[0, 0, 1, 0]; // returns 3
-        arr4d1[0, 0, 1, 1]; // returns 4
+        arr4d1[0, 0, 0, 0]; 
+        arr4d1[0, 0, 0, 1]; 
+        arr4d1[0, 0, 1, 0]; 
+        arr4d1[0, 0, 1, 1]; 
 
         int[,,,] arr4d2 = new int[1, 2, 2, 2]{
             {
@@ -144,14 +144,14 @@ public class Collections : MonoBehaviour
             }
         };
 
-        arr4d2[0, 0, 0, 0]; // returns 1
-        arr4d2[0, 0, 0, 1]; // returns 2
-        arr4d2[0, 0, 1, 0]; // returns 3
-        arr4d2[0, 0, 1, 1]; // returns 4
-        arr4d2[0, 1, 0, 0]; // returns 5
-        arr4d2[0, 1, 0, 1]; // returns 6
-        arr4d2[0, 1, 1, 0]; // returns 7
-        arr4d2[0, 1, 1, 1]; // returns 8*/
+        arr4d2[0, 0, 0, 0]; 
+        arr4d2[0, 0, 0, 1]; 
+        arr4d2[0, 0, 1, 0]; 
+        arr4d2[0, 0, 1, 1]; 
+        arr4d2[0, 1, 0, 0]; 
+        arr4d2[0, 1, 0, 1]; 
+        arr4d2[0, 1, 1, 0]; 
+        arr4d2[0, 1, 1, 1]; 
         
         // C# Jagged Arrays: An Array of Array
         // int[][] jArray1 = new int[2][];  
@@ -169,13 +169,13 @@ public class Collections : MonoBehaviour
             new int[4]{4, 5, 6, 7}
         };
 
-        jArray[0][0]; //returns 1
-        jArray[0][1]; //returns 2
-        jArray[0][2]; //returns 3
-        jArray[1][0]; //returns 4
-        jArray[1][1]; //returns 5
-        jArray[1][2]; //returns 6
-        jArray[1][3]; //returns 7*/
+        jArray[0][0];
+        jArray[0][1];
+        jArray[0][2];
+        jArray[1][0];
+        jArray[1][1];
+        jArray[1][2];
+        jArray[1][3];
         
         /*int[][] jArray = new int[2][]{
             new int[3]{1, 2, 3},
@@ -194,11 +194,11 @@ public class Collections : MonoBehaviour
         jArray[0] = new int[3, 2] { { 1, 2 }, { 3, 4 }, { 5, 6 } };
         jArray[1] = new int[2, 2] { { 7, 8 }, { 9, 10 } }; 
 
-        jArray[0][1, 1]; //returns 4
+        jArray[0][1, 1];
                                              
-        jArray[1][1, 0]; //returns 9
+        jArray[1][1, 0];
                                              
-        jArray[1][1, 1]; //returns 10*/
+        jArray[1][1, 1];
         
         /*int[][][] intJaggedArray = new int[2][][] 
         {
@@ -218,6 +218,128 @@ public class Collections : MonoBehaviour
         Debug.Log(intJaggedArray[0][1][1]); // 5
     
         Debug.Log(intJaggedArray[1][0][2]); // 9*/
+        
+        // C# - ArrayList
+        
+        // ArrayList arlist = new ArrayList();
+        // var arlist = new ArrayList();
+        /*var arlist1 = new ArrayList();
+        arlist1.Add(1);
+        arlist1.Add("Bill");
+        arlist1.Add(" ");
+        arlist1.Add(true);
+        arlist1.Add(4.5);
+        arlist1.Add(null);
+        
+        var arlist2 = new ArrayList()
+        {
+            2, "Steve", " ", true, 4.5, null
+        };*/
+        
+        /*var arlist1 = new ArrayList();
+
+        var arlist2 = new ArrayList()
+        {
+            1, "Bill", " ", true, 4.5, null
+        };
+
+        int[] arr = { 100, 200, 300, 400 };
+
+        Queue myQ = new Queue();
+        myQ.Enqueue("Hello");
+        myQ.Enqueue("World!");
+
+        arlist1.AddRange(arlist2);  
+        arlist1.AddRange(arr);  
+        arlist1.AddRange(myQ);*/
+        
+        /*var arlist = new ArrayList()
+        {
+            1,
+            "Bill",
+            300,
+            4.5f
+        };
+
+        int firstElement = (int) arlist[0];
+        string secondElement = (string) arlist[1];
+
+        var firstElement = arlist[0];
+        var secondElement = arlist[1];
+
+        arlist[0] = "Steve"; 
+        arlist[1] = 100;*/
+        
+        /*ArrayList arlist = new ArrayList()
+        {
+            1,
+            "Bill",
+            300,
+            4.5F
+        };
+
+        foreach (var item in arlist)
+            Debug.Log(item + ", "); 
+            
+        for(int i = 0 ; i < arlist.Count; i++)
+            Debug.Log(arlist[i] + ", ");*/
+        
+        /*ArrayList arlist = new ArrayList()
+        {
+            1,
+            "Bill",
+            300,
+            4.5f
+        };
+
+        arlist.Insert(1, "Second Item");
+
+        foreach (var val in arlist)
+            Debug.Log(val);*/
+        
+        /*ArrayList arlist1 = new ArrayList()
+        {
+            100, 200, 600
+        };
+
+        ArrayList arlist2 = new ArrayList()
+        {
+            300, 400, 500
+        };
+        arlist1.InsertRange(2, arlist2);
+
+        foreach(var item in arlist1)
+            Debug.Log(item + ", ");*/
+        
+        /*ArrayList arList = new ArrayList()
+        {
+            1,
+            null,
+            "Bill",
+            300,
+            " ",
+            4.5f,
+            300,
+        };
+
+        arList.Remove(null);
+        arList.RemoveAt(4);
+        arList.RemoveRange(0, 2);*/
+        
+        /*ArrayList arList = new ArrayList()
+        {
+            1,
+            "Bill",
+            300,
+            4.5f,
+            300
+        };
+
+        Debug.Log(arList.Contains(300));
+        Debug.Log(arList.Contains("Bill"));
+        Debug.Log(arList.Contains(10));
+        Debug.Log(arList.Contains("Steve"));*/
+
     }
 
     // Update is called once per frame
