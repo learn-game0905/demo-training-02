@@ -417,6 +417,101 @@ public class Collections : MonoBehaviour
         numbers.Contains(10);
         numbers.Contains(11);
         numbers.Contains(20);*/
+        
+        // C# - SortedList<TKey, TValue>
+        
+        /*SortedList<int, string> numberNames = new SortedList<int, string>();
+        numberNames.Add(3, "Three");
+        numberNames.Add(1, "One");
+        numberNames.Add(2, "Two");
+        numberNames.Add(4, null);
+        numberNames.Add(10, "Ten");
+        numberNames.Add(5, "Five");*/
+        
+        /*SortedList<string,string> cities = new SortedList<string,string>()
+        {
+            {"London", "UK"},
+            {"New York", "USA"},
+            { "Mumbai", "India"},
+            {"Johannesburg", "South Africa"}
+        };*/
+        
+        // SortedList<int,string> numberNames = new SortedList<int,string>()
+        // {
+        //     {3, "Three"},
+        //     {5, "Five"},
+        //     {1, "One"}
+        // };
+        //
+        // Console.WriteLine("---Initial key-values--");
+        //
+        // foreach(KeyValuePair<int, string> kvp in numberNames)
+        //     Console.WriteLine("key: {0}, value: {1}", kvp.Key , kvp.Value );
+        //
+        // numberNames.Add(6, "Six");
+        // numberNames.Add(2, "Two");
+        // numberNames.Add(4, "Four");
+        //
+        // Console.WriteLine("---After adding new key-values--");
+        //
+        // foreach(var kvp in numberNames)
+        //     Console.WriteLine("key: {0}, value: {1}", kvp.Key , kvp.Value );
+        
+        /*SortedList<int,string> numberNames = new SortedList<int,string>()
+        {
+            {3, "Three"},
+            {1, "One"},
+            {2, "Two"}
+        };
+
+        Console.WriteLine(numberNames[1]);
+        Console.WriteLine(numberNames[2]);
+        Console.WriteLine(numberNames[3]);
+
+        numberNames[2] = "TWO"; 
+        numberNames[4] = "Four";*/
+        
+        /*SortedList<int, string> numberNames = new SortedList<int,string>()
+        {
+            {3, "Three"},
+            {1, "One"},
+            {2, "Two"}
+        };
+        if(numberNames.ContainsKey(4)){
+            numberNames[4] = "four";
+        }
+
+        int result;
+        if(numberNames.TryGetValue(4, out result))
+            Console.WriteLine("Key: {0}, Value: {1}", 4, result);*/
+        
+        /*SortedList<int, string> numberNames = new SortedList<int,string>()
+        {
+            {3, "Three"},
+            {1, "One"},
+            {2, "Two"}
+        };
+        for (int i = 0; i < numberNames.Count; i++)
+        {
+            Console.WriteLine("key: {0}, value: {1}", numberNames.Keys[i], numberNames.Values[i]);
+        }*/
+        
+        /*SortedList<int,string> numberNames = new SortedList<int,string>()
+        {
+            {3, "Three"},
+            {1, "One"},
+            {2, "Two"},
+            {5, "Five"},
+            {4, "Four"}
+        };
+    
+        numberNames.Remove(1);
+        numberNames.Remove(10);
+
+        numberNames.RemoveAt(0); 
+
+        foreach(var kvp in numberNames)
+            Console.WriteLine("key: {0}, value: {1}", kvp.Key , kvp.Value );*/
 
     }
 
