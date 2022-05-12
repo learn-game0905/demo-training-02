@@ -268,6 +268,42 @@ public class ConditionsLoops : MonoBehaviour
             for(int j =i; j < 4; j++)
                 Debug.Log("Value of i: {0}, J: {1} ", i,j);
         }*/
+        
+        // C# - while Loop
+        /*int i = 0;
+
+        while (i < 10) 
+        {
+            Debug.Log("i = {0}", i);
+
+            i++; 
+        }*/
+        
+        /*int i = 0;
+
+        while (true)
+        {
+            Debug.Log("i = {0}", i);
+
+            i++;
+
+            if (i > 10)
+                break;
+        }*/
+        
+        /*int i = 0, j = 1;
+
+        while (i < 2)
+        {
+            Debug.Log("i = {0}", i);
+            i++;
+
+            while (j < 2)
+            {
+                Debug.Log("j = {0}", j);
+                j++;
+            }
+        }*/
     }
 
     // Update is called once per frame
